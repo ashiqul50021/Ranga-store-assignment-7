@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FakeStore</title>
+  <title>Ashiq mini shop</title>
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,21 +18,31 @@
 </head>
 
 <body>
+  <!-- header area start -->
   <header></header>
+  <!-- header area end -->
+  <!-- main area start -->
   <main class="main">
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
-      </div>
+    <div class="heading container text-center">
+      <h1>Ashiq Mini Shop</h1>
+      <small>best choice, best buy</small>
     </div>
+    <!-- search button start-->
+    <div class="container searchbox h-100">
+      <div class="row height d-flex justify-content-center align-items-center">
+          <div class="col-md-8">
+              <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Search product"> <button class="btn btn-primary"  onclick="loadProducts()">Search</button> </div>
+          </div>
+      </div>
+  </div>
+    <!-- search button end -->
+
+
+   
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <h1></h1>
+          <!-- <h1></h1> -->
         </div>
       </div>
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
@@ -50,7 +60,7 @@
             <tbody>
               <tr>
                 <th>Total Added-Products:</th>
-                <td>$ <span id="total-Products">0</span></td>
+                <td><span id="total-Products">0</span></td>
                 <td></td>
                 <td></td>
               </tr>
@@ -87,6 +97,7 @@
     </div>
   </main>
   <footer></footer>
+  <!-- main area end -->
 
   <!-- add javascript  file  -->
   <script src="./js/app.js"></script>

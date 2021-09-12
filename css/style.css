@@ -2,29 +2,45 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+
+/* search button */
+.searchbox{
+  margin-top: 30px;
+  margin-bottom: 50px;
+   
+  /* margin:  auto ; */
 }
-.search-field:hover {
-  outline: none;
-  border: none;
+.search {
+  position: relative;
+  box-shadow: 0 0 40px rgba(51, 51, 51, .1)
 }
-.search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
+
+.search input {
+  height: 60px;
+  text-indent: 25px;
+  border: 2px solid #d6d4d4
 }
-.search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+
+.search input:focus {
+  box-shadow: none;
+  border: 2px solid blue
 }
+
+.search .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 16px
+}
+
+.search button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 50px;
+  width: 110px;
+  background: blue
+}
+
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,9 +50,13 @@ body {
   margin: auto;
   align-items: center;
   justify-content: center;
+  
 }
 .single-product {
   padding: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: azure;
   transition: 0.6s;
 }
 .single-product:hover {
